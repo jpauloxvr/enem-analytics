@@ -35,6 +35,7 @@ CN = natural sciences, CH = human sciences, LC = languages, MT = mathematics. Ea
 
 - The Southeast is highest and the North lowest in every column. The South is within about 1 to 3 points of the Southeast in the objective tests.
 - Which state is "highest" depends on the column (for example DF in CN and CH, SP in LC and MT, MG in both essay averages).
+- A state tends to sit on the same side of the national mean in all four objective areas; the range between a state's highest and lowest standardized score is at most about 0.19 standard deviations (AP), and smallest in MT and GO (0.04).
 - The spread of individual scores inside a state is larger than the distance between the highest and the lowest state mean in LC.
 
 **Private minus public school mean (participants with school information)**
