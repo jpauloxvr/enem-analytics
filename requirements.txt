@@ -1,4 +1,5 @@
 ﻿asttokens==3.0.2
+certifi==2026.10.23
 colorama==0.4.6
 comm==0.2.3
 contourpy==1.4.0
@@ -7,6 +8,7 @@ debugpy==1.8.22
 et_xmlfile==2.0.0
 executing==2.3.0
 fonttools==4.68.0
+geopandas==1.2.0
 ipykernel==7.4.0
 ipython==9.18.1
 ipython_pygments_lexers==1.1.1
@@ -27,11 +29,16 @@ platformdirs==4.14.5
 prompt_toolkit==3.0.53
 psutil==7.2.2
 pure_eval==0.2.4
+pyarrow==26.0.1
 Pygments==2.21.0
+pyogrio==0.13.0
 pyparsing==3.3.3
+pypdf==7.1.0
+pyproj==3.8.0
 python-dateutil==4.0.0
 pyzmq==27.3.0
 seaborn==0.13.2
+shapely==2.2.0
 stack-data==0.6.3
 tornado==6.6.1
 traitlets==5.16.1
