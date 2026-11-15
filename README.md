@@ -13,6 +13,10 @@ Data source: [INEP microdata](https://www.gov.br/inep/pt-br/acesso-a-informacao/
 
 ## Key results
 
+![Mean LC score by state](images/map_lc_by_state.png)
+![Public vs. private gap by state](images/lc_public_private_by_state.png)
+![State profile across areas](images/heatmap_state_area_z.png)
+
 All means refer to participants present in each test, with blank objective answer sheets excluded (see Methodology). They describe exam takers, not the whole population, and they are not causal.
 
 **National means**
