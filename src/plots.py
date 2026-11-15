@@ -58,3 +58,17 @@ def gap_map(shapes, pivot, title):
     ax.set_title(title)
     ax.set_axis_off()
     return fig
+
+
+def state_map(shapes, state_means, area, title):
+    merged = shapes.merge(
+        state_means[[area]], left_on="SIGLA_UF", right_index=True, how="left"
+    )
+    fig, ax = plt.subplots(figsize=(8, 8))
+    merged.plot(
+        column=area, cmap="viridis", legend=True, edgecolor="white", linewidth=0.5,
+        ax=ax, legend_kwds={"label": f"Mean {area} score"},
+    )
+    ax.set_title(title)
+    ax.set_axis_off()
+    return fig

@@ -75,3 +75,19 @@ def gap_in_std(network_means, school_subset):
         std = present(school_subset, area)[f"NU_NOTA_{area}"].std()
         result[area] = gap / std
     return pd.Series(result)
+
+
+def score_spread(data, group_column, area):
+    scores = present(data, area)
+    return (
+        scores.groupby(group_column)[f"NU_NOTA_{area}"]
+        .agg(["mean", "median", "std"])
+    )
+
+
+def range_within_group(state_means, area, group_map):
+    table = state_means[[area]].copy()
+    table["group"] = table.index.map(group_map)
+    summary = table.groupby("group")[area].agg(["min", "max"])
+    summary["range"] = summary["max"] - summary["min"]
+    return summary.sort_values("range")
